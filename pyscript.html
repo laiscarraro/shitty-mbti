@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - scikit-learn
+        - matplotlib
+        - pandas
+        - paths:
+            - /mbti.sav 
+            - /model.py
+            - /question.py
+    </py-env>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Shitty MBTI</title>
+  </head>
+  <body>
+    <br>
+    <div class="container">
+        <h1 class='page-header'>MBTI, but worse!</h1>
+        <p class="lead">Hello! Welcome to the worst MBTI personallity test you'll ever find. This website was made using pyscript and bootstrap.</p>
+
+        <p>Assuming you're a human being, you've probably already read the big yellow message below. While you wait, let me keep you entertained. <br>
+        This was made using a <i>mAcHiNe LeArNinG mOdEL</i>, and the data was really bad, so if I'm being honest with you here, I'd say you won't get an accurate result with this test. <br>
+        If you're a data science nerd, the F1 was ~42%. If you don't know what this means, well, just know it's basically sh*t (but it still might be better than the """state-of-the-art""", 16personalities, of course). <br>
+        But if you like doing MBTI tests, or if you like the idea of interacting with a <i>mAcHiNe LeArNinG mOdEL</i>, well, who am I to tell you not to do it. <br>
+        Then what the hell, welcome to my creation.</p>
+        <div class="alert alert-warning" role="alert">For this script to work properly, please wait for the green heart to appear:</div>
+        <py-script src="model.py"></py-script>
+        <br>
+        <br>
+        <h2>How the heck is this going to work, then?</h2>
+        <p>You'll be asked to write a small essay about a specific situation. Each time you run this script, your question might be different (well, it <i>might</i> because there's a limited amount of questions, so if you're an absolute FREAK and play this several times, you'll probably get repeated questions). There's no character limit, so write as much as your heart desires. The only rule is to write everything in english, since the model was trained in english data only.</p>
+        <br>
+        <br>
+        <h2>Question time!</h2>
+        <py-script src="question.py" output="question"></py-script>
+        <div id="question"></div>
+        <p>(When you're done, hit Shift+Enter and wait for the magic to happen!)</p>
+        <py-repl id="repl">please_dont_change_my_name_im_just_a_variable = '''
+Write your answer here! 
+(But please, delete me. 
+Don't be afraid, I was made to be deleted. Go ahead. 
+I won't be sad, I promisse.)
+'''
+thank_you = please_dont_change_my_name_im_just_a_variable
+get_my_mbti_already_you_btch(thank_you)</py-repl>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Oh, hello there. If you like what you see, check out <a href="https://github.com/laiscarraro" target="_blank">my github page</a>. Maybe you'll find something else that catches your eye ;)</p>
+    </div>
+  </body>
+</html>

@@ -18,7 +18,7 @@ When you upload it to pages, though, the link github creates has the repo name. 
 My webdev skills were a little rusty ~~and I just couldn't care less tbh~~ to make this a little better when I was developing the first "version", so here are some changes that might improve it:
 
 **For the model part:**
-- Training the model with better data (litterally just doing a little preprocessing might already improve it)
+- Training the model with better data (literally just doing a little preprocessing might already improve it)
 - Testing different approaches (e.g.: bow instead of tf-idf, embeddings instead of those, ngrams, etc.)
 - Playing with the hyperparameters
 

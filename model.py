@@ -15,7 +15,7 @@ compliments = [
     "I hope you're having the best day of your life!"
 ]
 
-model = pickle.load(open('mbti.sav', 'rb'))
+model = pickle.load(open('shitty-mbit/mbti.sav', 'rb'))
 print('Thank you for waiting! ' + random.sample(compliments, k=1)[0] + ' 💚')
 labels = ['ENFJ', 'ENFP', 'ENTJ', 'ENTP', 'ESFJ', 'ESFP', 'ESTJ', 'ESTP', 'INFJ', 'INFP', 'INTJ', 'INTP', 'ISFJ', 'ISFP', 'ISTJ', 'ISTP']
 
